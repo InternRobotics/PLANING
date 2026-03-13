@@ -3,7 +3,7 @@
 [![Project Website](https://img.shields.io/badge/ARTDECO-Website-4CAF50?logo=googlechrome&logoColor=white)](https://city-super.github.io/PLANING/)
 [![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=b31b1b)](https://arxiv.org/abs/2601.22046)
 
-[Changjian Jiang*](https://scholar.google.com/citations?hl=en&user=V4miywEAAAAJ), [Kerui Ren*](https://cskrren.github.io/), [Xudong Li](https://orcid.org/0009-0003-8355-2491), [Kaiwen Song](https://orcid.org/0009-0007-1199-5380), [Linning Xu](https://eveneveno.github.io/lnxu), [Tao Lu](https://scholar.google.com/citations?user=Ch28NiIAAAAJ&hl=en), [Junting Dong](https://scholar.google.com/citations?hl=en&user=dEzL5pAAAAAJ), [Yu Zhang<sup>†</sup>](https://person.zju.edu.cn/zhangyu/), [Bo Dai](https://daibo.info/), [Mulin Yu](https://mulinyu.github.io/)
+[Changjian Jiang*](https://scholar.google.com/citations?hl=en&user=V4miywEAAAAJ), [Kerui Ren*](https://cskrren.github.io/), [Xudong Li](https://orcid.org/0009-0003-8355-2491), [Kaiwen Song](https://orcid.org/0009-0007-1199-5380), [Guanghao Li](https://scholar.google.com/citations?user=6nkKQDIAAAAJ&hl=zh-CN), [Linning Xu](https://eveneveno.github.io/lnxu), [Tao Lu](https://scholar.google.com/citations?user=Ch28NiIAAAAJ&hl=en), [Junting Dong](https://scholar.google.com/citations?hl=en&user=dEzL5pAAAAAJ), [Yu Zhang<sup>†</sup>](https://person.zju.edu.cn/zhangyu/), [Bo Dai](https://daibo.info/), [Mulin Yu](https://mulinyu.github.io/)
 
 ## Overview
 ![img](assets/teaser.png)
