@@ -1,0 +1,10 @@
+Pi3 source is vendored from ARTDECO commit bb654395826e50ac9e4671682d901377115a24ce.
+Its original non-commercial license is retained in LICENSE.
+
+The Meta copyright and Apache-2.0 notices in pi3/models/dinov2/ and
+pi3/models/layers/{attention,block}.py are retained. The Apache license text
+is included in pi3/models/dinov2/LICENSE.
+
+pi3/models/layers/pos_embed.py retains its Naver CC BY-NC-SA 4.0 notice.
+The CroCo license and its embedded attribution notices are included in
+licenses/LICENSE_CROCO.

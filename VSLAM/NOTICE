@@ -1,0 +1,6 @@
+MASt3R-SLAM-derived tracking and bundle-adjustment code retains the upstream
+CC BY-NC-SA 4.0 license in LICENSE.md.
+Upstream: https://github.com/rmurai0610/MASt3R-SLAM
+
+PLANING includes local modifications. Dependencies in thirdparty/ retain their
+own licenses and attribution notices in their source directories.

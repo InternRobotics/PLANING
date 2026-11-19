@@ -1,0 +1,43 @@
+# Local data, weights, results, and operational records.
+/data/
+/result/
+/results/
+/Results/
+/models/
+/VSLAM/checkpoints/
+/deployment/
+/docs/cleanup_review/
+/SOURCE_MANIFEST.json
+/.cleanup/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.part
+
+# Build products and Python caches.
+__pycache__/
+build/
+dist/
+*.egg-info/
+*.py[cod]
+*.so
+*.o
+*.a
+*.dll
+*.dylib
+*.pyd
+*.whl
+.cache/
+.pytest_cache/
+*.log
+
+# Local editor and operating-system files.
+.DS_Store
+._*
+.idea/
+.venv/
+.env
+.env.*
+/core
+/core.*

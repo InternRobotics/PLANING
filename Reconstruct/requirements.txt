@@ -1,0 +1,2 @@
+# Use the shared dependency list. CUDA extensions are separate build steps.
+-r ../requirements.txt

@@ -1,0 +1,58 @@
+use_calib: True
+undistortion: True
+
+dataset:
+  center_principle_point: True    # Optionally center the principal point during calibration preprocessing.
+
+matching:
+  # Iterative ray-based matching.
+  max_iter: 10 # Maximum number of projection iterations.
+  lambda_init: 1e-8 # Initial damping coefficient.
+  convergence_thresh: 1e-6 # Convergence threshold for iterative projection.
+  dist_thresh: 1e-1 # Maximum 3D distance between matched points.
+  radius: 3
+  dilation_max: 5
+
+tracking:
+  min_match_frac: 0.05    # Minimum correspondence coverage required for tracking.
+  max_iters: 50           # Maximum relative-pose optimization iterations.
+  C_conf: 0.0             # Minimum point-prediction confidence.
+  Q_conf: 1.5             # Minimum descriptor confidence.
+  rel_error: 1e-3         # Relative cost-change threshold for convergence.
+  delta_norm: 1e-3        # Pose-increment norm threshold for convergence.
+  huber: 1.345            # Huber threshold for whitened residuals.
+  match_frac_thresh: 0.333 # Insert a keyframe when correspondence coverage is below this threshold.
+  sigma_ray: 0.003        # Scale used to whiten unit-ray residuals.
+  sigma_dist: 1e+1        # Scale used to whiten distance residuals.
+  sigma_pixel: 1.0        # Scale used to whiten calibrated pixel residuals.
+  sigma_depth: 1e+1       # Scale used to whiten log-depth residuals.
+  sigma_point: 0.05
+  pixel_border: -10       # Negative values permit projections beyond the image boundary by this many pixels.
+  depth_eps: 1e-6         # Minimum valid depth in camera coordinates.
+
+
+local_opt:
+  pin: 1                # Number of leading keyframe poses held fixed during optimization.
+  window_size: 1e+6   
+  C_conf: 0.0
+  Q_conf: 1.5           # Minimum descriptor confidence.
+  min_match_frac: 0.1   # Minimum correspondence coverage in both directions for nonconsecutive factors.
+  pixel_border: -10     # Only in calib (negative means allow pixels outside image up to that distance)
+  depth_eps: 1e-6       # Only in calib case
+  max_iters: 10         # Maximum backend optimization iterations.
+  sigma_ray: 0.003
+  sigma_dist: 1e+1
+  sigma_pixel: 1.0
+  sigma_depth: 1e+1
+  sigma_point: 0.05
+  delta_norm: 1e-8
+  use_cuda: True
+
+retrieval:
+  k: 3                     # Number of retrieved keyframe candidates.
+  min_thresh: 5e-3         # Minimum retrieval similarity score.
+  accurate_min: 0.15
+
+reloc:
+  min_match_frac: 0.3      # Minimum correspondence coverage for relocalization.
+  strict: True             # Require valid factors to all retrieved relocalization candidates.
